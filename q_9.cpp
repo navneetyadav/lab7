@@ -14,7 +14,7 @@ int factorial(int a, int b, int fctr)
 	}
 	else
 	{
-		cout<<"Factorial of "<<n<<" = "<<fct<<endl;
+		cout<<"Factorial of "<<a<<" = "<<fctr<<endl;
 		return 1;
 	}
 }
