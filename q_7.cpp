@@ -3,52 +3,56 @@
 #include<cmath>
 using namespace std;
 
-// recursive function
-int rev(int a, int num)
-{
-	//
-	int x, y, z;
-	x=a; i=0; z=1;
-	//while loop for counting the number of digits
-	while(x>0)
-	{
-		x=x/10;
-		y++;
+//including libraries
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+//declaring recursive function
+int reverse(int n, int numr){
+	//declaring variables
+	int m, i, x;
+	//initializing m and i and x
+	m=n; i=0; x=1;
+	//running loop to count the number of digits
+	while(m>0){
+		m=m/10;
+		i++;
 	}
-	//changing the position of the digits
-	z=a%10;
-	num=num+z*(pow(10,y-1));
-	a=a/10;
-	if(a!=0)
-	{
-		//recursing the function
-		rev(a,num);
+	//switching digit positions
+	x=n%10;
+	numr=numr+x*(pow(10,i-1));
+	n=n/10;
+	//checking condition 
+	if(n!=0){
+		//calling function again
+		reverse(n,numr);
 	}
-	else
-	{
-		
+	else{
+		//terminating loop
 		return numr;
 	}
 }
 
-//calling the main function
-int main()
-{
-	//declaring the  variables
+//declaring driver function
+int main(){
+	//declaring variables
 	int num, revnum;
-	//ask user to enter a random number
-	cout<<"Enter a random numver"<<endl;
+	//asking user to enter a number
+	cout<<"Enter a number."<<endl;
+	//accepting value
 	cin>>num;
-	//calling the user defined function
-	revnum=rev(num, 0);
+	//calling function
+	revnum=reverse(num, 0);
 	//checking if number is palindrome or not
-	if(revnum==num)
-	{
-		cout<<"The number you entered is palindrome"<<endl;
+	if(revnum==num){
+		//displaying message
+		cout<<"The number is palindrome."<<endl;
 	}
-	else
-	{
+	else{
+		//displaying message
 		cout<<"The number is not palindrome."<<endl;
 	}
-		return 0;
+	//returning integer value to main function
+	return 0;
 }
