@@ -26,9 +26,9 @@ int odd(int a, int b){
 	
 	if(a<=b)
 		{
-		if(n1%2!=0){
+		if(a%2!=0){
 			//printing the number
-			cout<< n1<<endl;
+			cout<< a<<endl;
 		}
 		//reccursing the function
 		odd(a+1, b);
@@ -48,7 +48,7 @@ int main()
 	//asking user to enter upper and lower limit
 	cout<<"Enter the start point"<<endl;
 	cin>>n1;
-	cout<<"Enter the end point"<<endl
+	cout<<"Enter the end point"<<endl;
 	cin>>n2;
 	//asking user for choice
 	cout<<"1. Print all even numbers between "<<n1<<" and "<<n2<<"."<<endl;
