@@ -3,19 +3,19 @@
 using namespace std;
 
 // recursive function to print the sum
-int sum(int a, int b, int sum){
+int sum(int a, int b, int sm){
 	//checking condition
 	if(b<=a)
 	{
 		//adding numbers
-		sum=sum+b;
+		sum=sm+b;
 		//recursing the  function again
-		sum(a, b+1, sum);
+		sum(a, b+1, sm);
 	}
 	else
 	{
 		//displaying sum
-		cout<<"THE SUM OF THE NUMBERS BETWEEN 1 AND  "<<n<<" = "<<sum<<endl;
+		cout<<"THE SUM OF THE NUMBERS BETWEEN 1 AND  "<<a<<" = "<<sm<<endl;
 		return 1;
 	}
 }
