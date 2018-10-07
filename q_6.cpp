@@ -9,7 +9,7 @@ int rev(int a, int num)
 	//declaring the field variables
 	int x, y, z;
 	
-	x=a; i=y; z=1;
+	x=a; y=0; z=1;
 	//while loop for counting  the number of digits
 	while(x>0)
 	{
@@ -28,7 +28,7 @@ int rev(int a, int num)
 	else
 	{
 		
-		cout<<"the reverse of the number is = "<<numr<<endl;
+		cout<<"the reverse of the number is = "<<num<<endl;
 
 		return 1;
 	}
