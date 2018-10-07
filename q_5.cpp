@@ -1,4 +1,5 @@
 //calling the library
+
 #include<iostream>
 using namespace std;
 
@@ -8,7 +9,7 @@ int even(int a, int b, int evnsm)
 	if(a<=b)
 		{
 		//checking if the number is even
-		if(n1%2==0){
+		if(a%2==0){
 			//adding the even numbers 
 			evnsm=evnsm+a;
 		}
@@ -17,7 +18,7 @@ int even(int a, int b, int evnsm)
 }
 	else
 	{
-		cout<<"The sum of all even numbers is = "<<sumeven<<endl;
+		cout<<"The sum of all even numbers is = "<<evnsm<<endl;
 		
 		return 1;
 	}
@@ -32,7 +33,7 @@ int odd(int a, int b, int odsm)
 		if(a%2!=0)
 		{
 			//adding the odd numbers
-			odsm=odsm+n1;
+			odsm=odsm+a;
 		}
 		//recurring the function
 		odd(a+1, b, odsm);
@@ -40,7 +41,7 @@ int odd(int a, int b, int odsm)
 	else
 	{
 		
-		cout<<"The sum of all odd numbers is = "<<sumodd<<endl;
+		cout<<"The sum of all odd numbers is = "<<odsm<<endl;
 		
 		return 1;
 	}
@@ -79,3 +80,4 @@ int main()
 	
 	return 0;
 }
+
