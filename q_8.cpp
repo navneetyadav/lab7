@@ -1,4 +1,4 @@
-calling the library
+//calling the library
 #include<iostream>
 using namespace std;
 
@@ -8,7 +8,7 @@ int smd(int a, int sum)
 	int b;
 	//extracting and adding the digits
 	b=a%10;
-	sum=sum+x;
+	sum=sum+b;
 	a=a/10;
 	if(a!=0)
 	{
@@ -30,7 +30,7 @@ int main()
 	int n;
 	//asking the  user to enter a number
 	cout<<"Enter any number"<<endl;
-	cin>>num;
+	cin>>n;
 	//calling the user defined smd function
 	smd(n, 0);
 		return 0;
